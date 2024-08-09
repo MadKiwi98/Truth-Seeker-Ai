@@ -41,7 +41,7 @@ st.markdown('<div class="custom-title">TruthSeeker AI</div>', unsafe_allow_html=
 # Introduction text
 st.write("Welcome to TruthSeeker AI! Ask any question related to Jehovah's Witnesses' teachings, and I will provide answers based on the New World Translation of the Holy Scriptures.")
 
-# Ensure the API key is available
+# Check if the API key is available
 if not openai_api_key:
     st.error("OpenAI API key not found. Please configure it in the secrets management.", icon="⚠️")
 else:
