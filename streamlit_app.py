@@ -43,7 +43,7 @@ st.write("Welcome to TruthSeeker AI! Ask any question related to Jehovah's Witne
 
 # Ensure the API key is available
 if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
+    st.error("OpenAI API key not found. Please configure it in the secrets management.", icon="⚠️")
 else:
     # Create an OpenAI client.
     client = OpenAI(api_key=openai_api_key)
